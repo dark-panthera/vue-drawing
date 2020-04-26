@@ -1,20 +1,31 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Drawing</router-link> |
+      <router-link to="/preview"  target="_blank">Preview</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+$dark-color: #2c3e50;
+$secondary-color: #42b983;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  cursor: url('assets/highlighter.svg'), auto;
+  // cursor: url('../images/highlighter.cur'), url('../images/highlighter.svg'), auto;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $dark-color;
 }
 
 #nav {
@@ -22,10 +33,10 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $dark-color;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $secondary-color;
     }
   }
 }

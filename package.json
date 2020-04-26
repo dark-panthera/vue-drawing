@@ -4,12 +4,19 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-p5": "^0.8.3",
+    "vue-p5-component": "^1.0.4",
+    "vue-router": "^3.1.6",
+    "vue-socket.io": "^3.0.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
