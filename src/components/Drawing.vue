@@ -9,6 +9,7 @@
     <!--<div id="preview">
       <img v-if="imageUrl" :src="imageUrl" />
     </div>-->
+    
 
     <vue-p5
       @setup="setup"
